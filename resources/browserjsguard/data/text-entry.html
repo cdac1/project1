@@ -1,0 +1,90 @@
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<html>
+  <head>
+    <div id="cdac_header"><img src="header.png"/></div>
+    
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <script type="text/javascript" src="ddaccordion.js"></script>
+
+    <script type="text/javascript" src="ddaccordion2.js"></script>
+
+
+    <style type="text/css">
+        .applemenu{
+            margin: 0 0;
+            padding: 0;
+        }
+
+        .applemenu div.silverheader a{
+            background: black url(silvergradient.gif) repeat-x center left;
+            font: normal 12px Tahoma, "Lucida Grande", "Trebuchet MS", Helvetica, sans-serif;
+            color: white;
+            display: block;
+            position: relative; /*To help in the anchoring of the ".statusicon" icon image*/
+            width: auto;
+            padding: 5px 0;
+            padding-left: 8px;
+            text-decoration: none;
+        }
+
+
+        .applemenu div.silverheader a:visited, .applemenu div.silverheader a:active{
+            color: white;
+        }
+
+
+        .applemenu div.selected a, .applemenu div.silverheader a:hover{
+            background-image: url(silvergradientover.gif);
+            color: white;
+        }
+
+        .applemenu div.submenu{ /*DIV that contains each sub menu*/
+            background: white;
+            padding: 5px;
+            height: 200px; /*Height that applies to all sub menu DIVs. A good idea when headers are toggled via "mouseover" instead of "click"*/
+            overflow:auto;
+        }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript" src="updatepopup.js"></script>
+
+    <div class="applemenu">
+        <div id="cdac_domain" >Reload webpage in this tab</div>
+
+        <div id="cdac_menuone" class="silverheader">Hidden iframe(s) Redirections</div>
+        <div id="cdac_one" class="submenu">
+            No Hidden iframes<br />
+        </div>
+        
+        <div id="cdac_menutwo" class="silverheader">UnAuthorized Redirections</div>
+	<div id="cdac_two" class="submenu">
+            No UnAuthorized Redirections<br />
+	</div>
+        
+        <div id="cdac_menuthree" class="silverheader">Encoded JavaScript</div>
+	<div id="cdac_three" class="submenu">
+            No Encoded JavaScript Present<br />
+	</div>
+        
+        <div id="cdac_menufour" class="silverheader">External Domain Requests</div>
+        <div id="cdac_four" class="submenu">
+            No External Domain Requests<br />
+	</div>
+        
+        <div id="cdac_menufive" class="silverheader">Trackers</div>
+	<div id="cdac_five" class="submenu">
+            No Trackers found<br />
+	</div>
+	<div id="cdac_footer" >Supported by DeitY & CERT-In, Govt. of India</div>
+        
+    </div>
+  </body>
+</html>
