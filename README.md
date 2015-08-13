@@ -1,2 +1,1 @@
-# project1
-my first project 
+# Here we discuss the installation procedure
